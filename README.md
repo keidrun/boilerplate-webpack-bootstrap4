@@ -1,2 +1,3 @@
-# boilerplate-webpack-bootstrap4
-Boilerplate of a simple website with bootstrap4 and webpack.
+# boilerplate-webpack-es6-postcss
+
+Boilerplate of a simple website using es6 and postcss with webpack.

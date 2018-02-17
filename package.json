@@ -1,0 +1,52 @@
+{
+  "name": "boilerplate-webpack-es6-postcss",
+  "version": "0.0.1",
+  "description":
+    "Keid's Boilreplate of a simple website with bootstrap4 and webpack.",
+  "main": "index.js",
+  "repository":
+    "https://github.com/keidrun/boilerplate-webpack-es6-postcss.git",
+  "author": "keidrun",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^4.4.1",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.18.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-reporter": "^5.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "postcss-sorting": "^3.1.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.20.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
+  },
+  "scripts": {
+    "start": "webpack -d --config webpack.config.dev.js --watch",
+    "clean": "rimraf public",
+    "build": "yarn run clean && webpack -p --config webpack.config.prod.js",
+    "eslint": "eslint src",
+    "stylelint": "stylelint src"
+  }
+}

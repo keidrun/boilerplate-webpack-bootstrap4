@@ -1,0 +1,16 @@
+.hero {
+    height: 500px;
+    width: 100%;
+    background: url('/images/dancing-couple.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1,
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        color: #fff;
+        text-align: center;
+    }
+}
