@@ -1,17 +1,17 @@
-const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.js$/,
         use: ['eslint-loader'],
         enforce: 'pre',
         exclude: /node_modules/
       },
       {
-        test: /\.(js)$/,
+        test: /\.js$/,
         use: 'babel-loader',
         exclude: /node_modules/
       },
@@ -39,5 +39,12 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js']
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+      }
+    })
+  ]
 };

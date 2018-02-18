@@ -1,7 +1,7 @@
 .hero {
-    height: 500px;
+    height: 100%;
     width: 100%;
-    background: url('/images/dancing-couple.jpg');
+    background-image: url('/images/dancing-couple.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
